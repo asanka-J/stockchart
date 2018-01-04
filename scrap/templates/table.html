@@ -1,0 +1,132 @@
+
+
+<script>
+
+function tableData(){
+
+
+	var xmlhttp = new XMLHttpRequest();
+	var url = 'static/api.json';
+
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var myArr = JSON.parse(this.responseText);
+			myFunction(myArr);
+			
+			
+		}
+	};
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+
+
+
+	function myFunction(arr) {
+		var out = "";
+		var i;
+		for(i = 0; i < arr.length; i++) {
+			out += '<tr><td>'+arr[i].rank+'</td><td ><a href="/' + arr[i].rank + '">' + arr[i].name + '</a></td><td >' + arr[i].symbol + '</td><td ><img src="' +  arr[i].graph +  '" alt="' + arr[i].name + '"></td><td >' + arr[i].price_usd + '</td><td ></td><td >' + arr[i].market_cap_usd + '</td><td >' + arr[i].max_supply + '</td><td >' + arr[i].percent_change_24h + ' %</td><td >' + arr[i].last_updated + '</td></tr>';		
+		};
+		document.getElementById("tr").innerHTML = out;
+		
+	};
+	return
+};
+
+//function startInterval()
+//{
+	//setInterval("test()", 5000);
+//};
+
+window.onload = tableData();
+
+
+</script>
+
+
+
+ {%  load static %}
+  
+	<div class="clearfix" ></div>
+	
+	<div class="row">
+	  <div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="x_panel">
+		
+			
+		  <div class="x_content">
+			<table id="datatable" class="table table-striped table-bordered">
+			  <thead>
+				<tr>
+					{% for cols in content.headings %}
+						<th>{{ cols }}</th>
+					{% endfor %}
+				  
+				</tr>
+			  </thead>
+				
+
+			  <tbody id="tr" class="container">
+			  
+			  
+							
+					
+
+					<!-- {% for keys in content.results %} -->
+					<!-- <tr> -->
+						<!-- <td >{{keys.rank}}</td> -->
+						<!-- <td ><a href="/{{keys.rank}}">{{keys.name}}</a></td> -->
+						<!-- <td >{{keys.symbol}}</td> -->
+						<!-- <td ><img src="{{ keys.graph }}" alt="{{keys.name}}"></td> -->
+						<!-- <td >{{keys.price_usd}}</td> -->
+						<!-- <td >{{keys.24h_volume_usd}}</td> -->
+						<!-- <td >{{keys.market_cap_usd}}</td> -->
+						<!-- <td >{{keys.max_supply}}</td> -->
+						<!-- <td >{{keys.percent_change_24h}} %</td> -->
+						<!-- <td >{{keys.last_updated}}</td> -->
+					<!-- </tr> -->
+					<!-- {% endfor %} -->
+			   
+			  </tbody>
+			</table>
+		  </div>
+		</div>
+	  </div>
+
+  </div>
+</div>
+
+<!-- Custom Theme Scripts -->
+	<!-- jQuery -->
+    <script src="{% static '/vendors/jquery/dist/jquery.min.js' %}"></script>
+	
+	
+    <!-- Bootstrap -->
+    <script src="{% static '/vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <!-- FastClick -->
+    <script src="{% static '/vendors/fastclick/lib/fastclick.js' %}"></script>
+    <!-- NProgress -->
+    <!-- <script src="{% static '/vendors/nprogress/nprogress.js' %}"></script> -->
+    <!-- iCheck -->
+    <!-- <script src="{% static '/vendors/iCheck/icheck.min.js' %}"></script> -->
+    <!-- Datatables -->
+    <script src="{% static '/vendors/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+	
+    <script src="{% static '/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
+	
+    <script src="{% static '/vendors/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+	
+    <script src="{% static '/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-buttons/js/buttons.flash.min.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-buttons/js/buttons.html5.min.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-buttons/js/buttons.print.min.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js' %}"></script>
+    <script src="{% static '/vendors/datatables.net-scroller/js/dataTables.scroller.min.js' %}"></script>
+    <script src="{% static '/vendors/jszip/dist/jszip.min.js' %}"></script>
+    <script src="{% static '/vendors/pdfmake/build/pdfmake.min.js' %}"></script>
+    <script src="{% static '/vendors/pdfmake/build/vfs_fonts.js' %}"></script>
+    <script src="{% static '/build/js/custom.min.js' %}"></script>
+	
