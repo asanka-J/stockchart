@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': "CryptoStock",
         'USER': 'root',
-        'PASSWORD': "",
+        'PASSWORD': "123",
         'HOST': "localhost",
         'PORT': '3306',
     }

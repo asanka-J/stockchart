@@ -93,7 +93,8 @@ nav#menuItem.navbar.navbar-default{
 }
 
 nav#menuItem.navbar.navbar-default{
-  background-color:#00305e;
+  background-color:#052d4e;
+  color : rgb(255, 255, 255);
 }
 
 a#logo.navbar-brand.text-uppercase.bg-warning.show.navbar-link{
@@ -142,9 +143,9 @@ a.text-lowercase.text-primary{
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-  color:#ffffff;
+  color:#1b1a1a;
   
-  background-color:#163344;
+  background-color:#b2ecec;
   font-family:cursive;
   font-size:20px;
   -moz-box-shadow:3px 3px 5px 6px #ccc;
