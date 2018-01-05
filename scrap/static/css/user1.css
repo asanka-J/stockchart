@@ -1,0 +1,189 @@
+.breadcrumb{
+  text-align:center;
+  background-color:transparent;
+  border-bottom:1px solid #eee;
+  padding-top:12px;
+  padding-bottom:12px;
+  margin-bottom:40px;
+}
+
+nav.navbar.navbar-default{
+  margin-bottom:0px;
+  background-color:#f1f1f1;
+}
+
+@media (min-width:992px) {
+  .product h2{
+    margin-top:0;
+  }
+}
+
+.navbar .navbar-brand{
+  font-size:24px;
+  line-height:18px;
+}
+
+.reviewer-name{
+  margin-right:10px;
+}
+
+.site-footer{
+  padding:20px 0;
+  text-align:center;
+}
+
+@media (min-width:768px) {
+  .site-footer h5{
+    text-align:left;
+  }
+}
+
+.site-footer h5{
+  color:inherit;
+  font-size:16px;
+}
+
+.site-footer .social-icons a:hover{
+  opacity:1;
+}
+
+.site-footer .social-icons a{
+  display:inline-block;
+  width:32px;
+  border:none;
+  font-size:20px;
+  border-radius:50%;
+  margin:4px;
+  color:#fff;
+  text-align:center;
+  background-color:#798FA5;
+  height:32px;
+  opacity:0.8;
+  line-height:32px;
+}
+
+@media (min-width:768px) {
+  .site-footer .social-icons{
+    text-align:right;
+  }
+}
+
+.btn.write-review{
+  float:right;
+  margin-top:-6px;
+}
+
+div.col-md-12{
+}
+
+tr#CointExch{
+  color:rgb(237,233,233);
+}
+
+div#coinExch.col-md-12{
+  background-color:black;
+  color:white;
+}
+
+div#coinExch.row{
+  background-color:rgb(4,38,62);
+}
+
+nav#menuItem.navbar.navbar-default{
+}
+
+nav#menuItem.navbar.navbar-default{
+  background-color:#00305e;
+}
+
+a#logo.navbar-brand.text-uppercase.bg-warning.show.navbar-link{
+  color:white;
+  background-color:initial;
+}
+
+a#navBar.text-warning{
+  color:white;
+}
+
+a#navBarItem.text-warning{
+  color:white;
+}
+
+a{
+  color:white;
+}
+
+a.text-warning{
+}
+
+a#navbutton1.text-warning{
+  color:white;
+}
+
+a#navbutton2{
+  color:white;
+}
+
+a#navbutton3{
+  color:white;
+}
+
+
+
+a#navbutton4{
+  color:white;
+}
+
+a.text-lowercase.text-primary{
+  color:#00054F;
+}
+
+.navbar-default .navbar-nav > li{
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+  color:#ffffff;
+  
+  background-color:#163344;
+  font-family:cursive;
+  font-size:20px;
+  -moz-box-shadow:3px 3px 5px 6px #ccc;
+  -webkit-box-shadow:1px 1px 1px 1px #ccc;
+}
+
+td#customcoinPercentage{
+ font-size:130%;
+  color:rgb(254,16,16);
+}
+
+td#increase{
+  color:green;
+}
+
+div#exchangeAreaImg{
+}
+
+div#exchangeTransparent.col-md-12{
+}
+
+div#exchangTransbox{
+}
+
+div#coinExcchangeArea.container-fluid{
+  background-color:white;
+  font-style:initial;
+  font-family:serif;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+  position:relative;
+  min-height:1px;
+  padding-left:6px;
+}
+
+
+
+.top_navbar {
+  margin-left: 230px;
+  font-size: 15px;
+}
